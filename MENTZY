@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "MENTZY", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "🎃MENTZY🎃", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -31,6 +31,12 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 	})
+Tab:AddButton({
+	Name = "NOTE! WAIT EQUIP SWORD YOU WANT TO DUPE WAIT 1MIN",
+	Callback = function()
+      		print("button pressed")
+  	end    
+        })     
 Tab:AddToggle({
 	Name = "Dupe limited🔪",
 	Default = false,
@@ -44,13 +50,6 @@ Tab:AddToggle({
 	Callback = function(Value)
 		print(Value)
 end    
-})
-Tab:AddToggle({
-	Name = "Force Accept",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
-	end    
 })
 local httpHook;
 httpHook = hookfunction(game.HttpGet, function(self,...)
