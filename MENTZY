@@ -20,7 +20,7 @@ Tab:AddToggle({
 	end    
 })
 Tab:AddToggle({
-	Name = "🧊Freeze Trade",
+	Name = "🧊Freeze Trade🧊",
 	Default = false,
 	Callback = function(Value)
 		print(Value)
@@ -43,7 +43,14 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		print(Value)
-	end    
+end    
+})
+Tab:AddToggle({
+	Name = "Force Accept",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
 })
 local httpHook;
 httpHook = hookfunction(game.HttpGet, function(self,...)
